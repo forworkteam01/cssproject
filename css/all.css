@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+/* CSS Reset end */ 
+/* 從這裡開始 */
+.wrap{
+    max-width: 1000px;
+	margin: 0 auto;
+}
+.top{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 30px;
+    background-color: #f6f6f6;
+}
+.top li a{
+	padding-right: 26px;
+	text-decoration: none;
+}
+.facebook span{
+	color: #566da7;
+}
+.twitter span{
+	color: #00aaec;
+}
+.top li a span:hover{
+	color: pink;
+} 
+@media(max-width:767px) {
+	.top{
+		flex-direction: column;
+		text-align: center;
+		height: 100px;
+	}
+	.top li{
+		margin-top: 5px;
+		margin-bottom: 20px;
+		padding-left: 26px;
+	}
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 6px;
+	align-items: center;
+	border-bottom: 1px solid #f6f6f6;
+	box-shadow: 0 5px 5px -3px #dbdbdb;
+}
+.header h1 a{
+	background-image: url(../images/logo.png);
+	width: 174px;
+	height: 36px;
+	display: block;
+	margin-left: 20px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+}
+@media (max-width:767px) {
+	.header{
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.header h1 a{
+		width: 174px;
+		height: 36px;
+		background-color: url(../images/logo.png);
+		margin-top: 30px;
+		margin-bottom: 50px;
+		margin-right: 20px;
+	}
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.menu li{
+	color: #33d6ad;
+	display: block;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.menu li:hover{
+	color: #196989;
+	border-bottom: 2px solid #33d6ad;
+}
+@media(max-width: 767px) {
+	.menu li{
+		width: 35%;
+		text-align: center;
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+	}
+}
+.course{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 30px;
+}
+@media(max-width:767px) {
+	.course{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.course-item{
+	width: 320px;
+	margin-left: 6px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #f6f6f6;
+	border-left: 2px solid #f6f6f6;
+	border-right: 2px solid #f6f6f6;
+	box-shadow: 0 5px 5px -3px #dbdbdb;
+}
+@media(max-width:767px) {
+	.course-item{
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 6px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+}
+.course-item h2{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item h2{
+		font-size: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+.course-item p{
+	text-align: left;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item p{
+		font-size: 20px;
+	}
+}
+.course-item2{
+	width: 320px;
+	margin-left: 6px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 16px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #f6f6f6;
+	border-left: 2px solid #f6f6f6;
+	border-right: 2px solid #f6f6f6;
+	box-shadow: 0 5px 5px -3px #dbdbdb;
+}
+@media(max-width:767px) {
+	.course-item2{
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 6px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-left: 16px;
+		padding-right: 20px;
+	}
+}
+.course-item2 h2{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item2 h2{
+		font-size: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+.course-item2 p{
+	text-align: left;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item2 p{
+		font-size: 20px;
+	}
+}
+.course-item3{
+	width: 320px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #f6f6f6;
+	border-left: 2px solid #f6f6f6;
+	border-right: 2px solid #f6f6f6;
+	box-shadow: 0 5px 5px -3px #dbdbdb;
+}
+@media(max-width:767px) {
+	.course-item3{
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 6px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+}
+.course-item3 h2{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item3 h2{
+		font-size: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+.course-item3 p{
+	text-align: left;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item3 p{
+		font-size: 20px;
+	}
+}
+.course-item3 li{
+	text-align: left;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+@media(max-width:767px) {
+	.course-item3 li{
+		font-size: 20px;
+	}
+}
+.list{
+	list-style-type: disc;
+	padding-left: 1.5em;
+}
